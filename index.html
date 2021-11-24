@@ -11,16 +11,62 @@
     <!-- bootstrap css file  -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h2>Ticket Booking App</h2>
+    <div class="container">
+        <h1 class="mt-5">Ticket Booking App</h1>
+        <div id="app">
+            <div class="ticket-app">
+                <div class="ticket-app__header">
+                    <div class="ticket-item-wrapper">
+                        <div class="box-bg red"></div>
+                        <div class="ticket-item">Sold</div>
+                    </div>
+                    <div class="ticket-item-wrapper">
+                        <div class="box-bg available"></div>
+                        <div class="ticket-item">Available</div>
+                    </div>
+                    <div class="ticket-item-wrapper">
+                        <div class="box-bg booked"></div>
+                        <div class="ticket-item">Booked</div>
+                    </div>
+                    <div class="ticket-item-wrapper">
+                        <div class="box-bg selected"></div>
+                        <div class="ticket-item">Selected</div>
+                    </div>
+                </div>
+                <div class="ticket-app__body">
+                  <div class="ticket-app__left">
+                    <div class="door-driver">
+                        <div class="door">Door</div>
+                        <div class="driver">Driver</div>
+                    </div>
+                    <ul class="seat-plan">
+                        <li class="seat-item">A1</li>
+                        <li class="seat-item">A2</li>
+                        <li class="seat-item">A3</li>
+                        <li class="seat-item">A4</li>
+                        <li class="seat-item">A1</li>
+                        <li class="seat-item">A1</li>
+                        <li class="seat-item">A1</li>
+                        <li class="seat-item">A1</li>
+                        <li class="seat-item">A1</li>
+                        <li class="seat-item">A1</li>
+                        <li class="seat-item">A1</li>
+                        <li class="seat-item">A1</li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-    <div id="app"></div>
+    
 
     <!-- bootstrap js file  -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
