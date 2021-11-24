@@ -53,11 +53,11 @@
                     </div>
                 </div>
                 <div class="ticket-app__header">
-                    <div class="ticket-item-wrapper">
-                        <div class="box-bg red"></div>
-                        <div class="ticket-item">Sold</div>
+                    <div class="ticket-item-wrapper" v-for="(value,key) in seatStates">
+                        <div class="box-bg red" :style="{backgroundColor:value.color}"></div>
+                        <div class="ticket-item">{{value.text}}</div>
                     </div>
-                    <div class="ticket-item-wrapper">
+                    <!-- <div class="ticket-item-wrapper">
                         <div class="box-bg available"></div>
                         <div class="ticket-item">Available</div>
                     </div>
@@ -68,7 +68,7 @@
                     <div class="ticket-item-wrapper">
                         <div class="box-bg selected"></div>
                         <div class="ticket-item">Selected</div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="ticket-app__body">
                   <div class="ticket-app__left">
@@ -141,8 +141,15 @@
                   </div>
                 </div>
             </div>
+
+
+
+            <input type="text" v-model="bgColor" class="m-5">
+            <input type="color" v-model="bgColor" class="m-5">
+            <div class="m-5 abc" :style="{backgroundColor : bgColor}"></div>
         </div>
     </div>
+
 
 
     
