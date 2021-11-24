@@ -80,3 +80,13 @@
 .ticket-app__right .header h6{
     font-weight: 700;
 }
+.coupon-wrapper p {
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+.coupon-wrapper input {
+    width:154px;
+    height:30px
+}
