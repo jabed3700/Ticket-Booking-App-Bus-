@@ -3,6 +3,7 @@
     width: 500px;
     height: 400px;
     padding: 15px;
+    position: relative;
 }
 .ticket-app__header{
     display: flex;
@@ -89,4 +90,19 @@
 .coupon-wrapper input {
     width:154px;
     height:30px
+}
+.table td, .table th {
+    padding: 0.25rem;
+}
+
+.dialog-popUp{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 33px;
 }
