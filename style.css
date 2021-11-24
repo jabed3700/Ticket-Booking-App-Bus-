@@ -33,8 +33,15 @@
     background-color: rgb(0, 255, 0);;
 }
 .ticket-app__body{
-    width:180px;
     margin-top:25px;
+    display: flex;
+}
+.ticket-app__body .ticket-app__left{
+    width:180px;
+    margin-right: 20px;
+}
+.ticket-app__body .ticket-app__right{
+    width:57%;
 }
 .ticket-app__body .door-driver{
     border: 1px solid grey;
@@ -55,7 +62,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .seat-plan li{
     border: 1px solid grey;
@@ -69,4 +76,7 @@
 }
 .seat-plan li:nth-child(4n){
     margin-right: 0;
+}
+.ticket-app__right .header h6{
+    font-weight: 700;
 }
