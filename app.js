@@ -1,6 +1,7 @@
 const app = Vue.createApp({
     data() {
         return {
+            confirm : false,
             appliedCoupon: null,
             couponCode: "",
             coupons: [{
@@ -194,6 +195,30 @@ const app = Vue.createApp({
             // console.log(seatInfo.type);
 
 
+        },
+        confirmed(){
+            if(!this.name || !this.mobile){
+                console.log('asdf');
+                alert('Please enter name and mobile')
+                return
+            }
+           this.confirm = true;
+        
+        },
+        reset(){
+            this.confirm = false;
+            this.appliedCoupon = null;
+            this.name="";
+            this.mobile = "";
+
+            
+            this.seats.filter((value)=>{
+                console.log("5555");
+                if(value.type === "selected"){
+                    value.type = "sold"
+                }
+            });
+           
         }
     },
 

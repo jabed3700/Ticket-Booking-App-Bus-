@@ -21,7 +21,7 @@
     <h1 class="mt-5">Ticket Booking App</h1>
     <div id="app">
       <div class="ticket-app">
-        <div class="dialog-popUp d-none">
+        <div class="dialog-popUp" v-if="confirm">
           <div class="ticket-app__right">
             <div class="header">
               <h6>Selected Seats</h6>
@@ -48,7 +48,7 @@
                 </tbody>
               </table>
 
-              <button class="mt-5 btn btn-info btn-block">Book Again</button>
+              <button class="mt-5 btn btn-info btn-block" @click="reset">Book Again</button>
             </div>
           </div>
         </div>
@@ -120,10 +120,10 @@
                 
               </div>
               <div class="user-info d-flex mt-4">
-                <input type="text" placeholder="name" class="w-50 mr-2">
-                <input class="w-50" type="text" placeholder="mobile">
+                <input type="text" placeholder="name" class="w-50 mr-2" v-model="name">
+                <input class="w-50" type="text" placeholder="mobile" v-model="mobile">
               </div>
-              <button class="mt-3 btn btn-info btn-block">Confirm</button>
+              <button class="mt-3 btn btn-info btn-block" @click="confirmed">Confirm</button>
             </div>
           </div>
         </div>
