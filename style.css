@@ -70,6 +70,8 @@
     padding:4px 5px;
     margin-right: 10px;
     margin-bottom: 10px;
+    width: 31px;
+    cursor: pointer;
 
 }
 .seat-plan li:nth-child(4n-2){
@@ -109,4 +111,14 @@
 
 .abc{
     width: 200px;height:200px;border:1px solid red
+}
+.seat--sold{
+    background-color: red;
+}
+.seat--booked{
+    background-color: grey;
+}
+.seat--selected{
+    background-color: #00ff00;
+    color:white;
 }
