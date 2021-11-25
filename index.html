@@ -123,7 +123,7 @@
                 <input type="text" placeholder="name" class="w-50 mr-2" v-model="name">
                 <input class="w-50" type="text" placeholder="mobile" v-model="mobile">
               </div>
-              <button class="mt-3 btn btn-info btn-block" @click="confirmed">Confirm</button>
+              <button class="mt-3 btn btn-info btn-block" @click="confirmed" :disabled="isDisabled">Confirm</button>
             </div>
           </div>
         </div>

@@ -1,6 +1,9 @@
 const app = Vue.createApp({
     data() {
         return {
+            disable:true,
+            name:"",
+            mobile:"",
             confirm : false,
             appliedCoupon: null,
             couponCode: "",
@@ -170,6 +173,12 @@ const app = Vue.createApp({
               tc = tc-this.appliedCoupon.discount;
             }
             return tc;
+        },
+
+        isDisabled: function(){
+            if(!this.name || !this.mobile){
+                return  this.disable;
+            }
         }
 
 
@@ -238,7 +247,8 @@ const app = Vue.createApp({
                 }
             };
 
-        }
+        },
+       
 
     }
 })
