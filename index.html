@@ -24,26 +24,27 @@
         <div class="dialog-popUp" v-if="confirm">
           <div class="ticket-app__right">
             <div class="header">
-              <h6>Selected Seats</h6>
+              <h6 class="text-success">Ticket confirmed!</h6>
+              <hr>
               <table class="table table-bordered">
-                <thead>
-                  <tr>
-                    <th scope="col">Seat</th>
-                    <th scope="col">First</th>
-                  </tr>
-                </thead>
+                <!-- <thead>
+                 
+                </thead> -->
                 <tbody>
                   <tr>
-                    <th>1</th>
-                    <td>Mark</td>
+                    <th>Passenger Name</th>
+                    <td>{{name}}</td>
                   </tr>
                   <tr>
-                    <th>2</th>
-                    <td>Mark</td>
+                    <th>Passenger Contact</th>
+                    <td>{{mobile}}</td>
                   </tr>
+                  <tr >
+                    <th>Seat</th>
+                    <td><div  v-for="seatSelect in selectedSeat">{{seatSelect.name}}</div></td>
                   <tr>
-                    <th>3</th>
-                    <td>Mark</td>
+                    <th>TotalCost</th>
+                    <td> {{totalCost}}</td>
                   </tr>
                 </tbody>
               </table>
